@@ -20,7 +20,11 @@ class HomeDetailPage extends StatelessWidget {
           alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
           children: [
-            "\$${catalog.price}".text.bold.xl4.red800.make(),
+            Text(
+              "\$${catalog.price}",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold, fontSize: 35, color: Colors.red),
+            ),
             ElevatedButton(
               onPressed: () {},
               style: ButtonStyle(
